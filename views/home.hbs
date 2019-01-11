@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{pageTitle}}</title>
+    </head>
+    <body>
+        {{> header}}
+        <p>{{screamIt welcomeMessage}}</p>
+        <form action="/form" method="get">
+        <label for="team_name">Enter name: </label>
+        <input id="team_name" type="text" name="mytext" value="Default name for team.">
+        <input type="submit" value="OK">
+        </form>
+        <p>{{yourMessage}}</p>
+        {{> footer}}
+    </body>
+</html>
